@@ -1,10 +1,10 @@
 const axios = require('axios');
+require('dotenv').config();
 
-// paste URL from Alchemy below
-const ALCHEMY_URL = '';
+const ALCHEMY_ENDPOINT = process.env.ALCHEMY_ENDPOINT;
 
 axios
-  .post(ALCHEMY_URL, {
+  .post(ALCHEMY_ENDPOINT, {
     jsonrpc: '2.0',
     id: 1,
     // example method w/ params below:
