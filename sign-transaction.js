@@ -10,13 +10,13 @@ const ALCHEMY_ENDPOINT = process.env.ALCHEMY_ENDPOINT;
 
 (async () => {
   const txParams = {
-    nonce: '0x2', // manually change
+    nonce: '0x5', // manually change
     // gasLimit: '0x5208',
     maxPriorityFeePerGas: '0x3b9aca00',
     maxFeePerGas: '0x3b9acaff',
-    to: '0xb7a0706d669eee9eaf9d0e6d9cdf075c31a19f6a',
+    to: '0xccd211900a28e655f1fedba8905bcfeda87cfe5d',
     value: '0x0',
-    data: '0xd09de08a',
+    data: '0x2ebcff990000000000000000000000000000000000000000000000000000000000000032',
     // chainId: '0x05', // goerli chain id
     type: '0x02', // eip 1559
   };
