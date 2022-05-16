@@ -5,7 +5,6 @@ require('dotenv').config();
 
 const common = new Common({ chain: Chain.Goerli, hardfork: Hardfork.London });
 
-// if you set up the .env file correctly, your private key and alchemy endpoint will be accessed automatically using `process.env`
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
 const ALCHEMY_ENDPOINT = process.env.ALCHEMY_ENDPOINT;
 
